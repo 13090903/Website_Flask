@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+    <meta charset="UTF-8">
+    <title>Cipher Decoder</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="/static/script.js"></script>
+</head>
+<body>
+<div class="header">
+    <p class="title">
+        Добро пожаловать на сайт для декодирования шифров!
+    </p>
+</div>
+
+<div class="main">
+    <form method="post">
+        <label for="text-input">Введите текст для расшифровки:</label>
+        <textarea id="text-input" name="text" rows="5" placeholder="Текст"></textarea>
+        <input onclick="getText()" type="text" value="Отправить">
+    </form>
+
+    <div class="output-box">
+        <label class="output-label">Возможные варианты расшифровки:</label>
+        <div class="message-box" id="message-box"></div>
+    </div>
+</div>
+
+<div class="addInfo">
+    <div class="infoTitles">
+        <p class="aboutMeTitle">
+            Об авторе
+        </p>
+        <p class="aboutSiteTitle">
+            Описание сайта
+        </p>
+        <p class="linkToMeTitle">
+            Связь с автором
+        </p>
+    </div>
+    <div class="infoText">
+        <p class="aboutMe">
+            Создатель сайта - Скарга Дмитрий Юрьевич, студент 2 курса Факультета компьютерных наук Воронежского
+            государственного университета.
+        </p>
+        <p class="aboutSite">
+            Цель сайта - возможность просмотра интересных футбольных новостей, информации о последних футбольных матчах,
+            трансферах, а также актуальных прогнозов на ближайшие матчи.
+        </p>
+        <div class="linkToMe">
+            <a class="email" href="mailto:iamdimonis@gmail.com">
+                Задавайте вопросы по электронной почте
+            </a>
+            <p class="socialNetText">
+                или в социальных сетях
+            </p>
+            <div class="socialNetworks">
+                <a class="vk" href="https://vk.com/iamdimonis">
+                    <img src="https://cdn-icons-png.flaticon.com/512/725/725288.png" width="35" height="35">
+                </a>
+                <a class="inst" href="https://www.instagram.com/dmitry_skarga">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+                         width="35" height="35">
+                </a>
+                <a class="teleg" href="https://t.me/Dmitry_Skarga">
+                    <img src="https://cdn-icons-png.flaticon.com/512/124/124019.png" width="35" height="35">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
