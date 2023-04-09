@@ -1,5 +1,5 @@
 .header {
-    width: 99vw;
+    width: 100vw;
     height: 60px;
     background: black;
     display: flex;
@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     font-weight: bold;
-    width: 99vw;
+    width: 100vw;
     color: white;
     font-size: 250%;
     margin-top: 3px;
@@ -19,14 +19,14 @@
 }
 
 .addInfo {
-    width: 99vw;
+    width: 100vw;
     margin-top: 5%;
     height: 30vh;
     background-color: black;
 }
 
 .infoTitles {
-    width: 99vw;
+    width: 100vw;
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -130,9 +130,10 @@
 }
 
 .main {
+  padding-top: 5vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 form {
@@ -163,8 +164,8 @@ textarea:focus {
   outline: none;
 }
 
-input[type="text"] {
-  width: 39vw;
+input[type="submit"] {
+  width: 41.5vw;
   height: 5vh;
   margin-top: 10px;
   padding: 10px 20px;
@@ -176,7 +177,7 @@ input[type="text"] {
   cursor: pointer;
 }
 
-input[type="text"]:hover {
+input[type="submit"]:hover {
   background-color: #2E8B57;
 }
 
@@ -189,12 +190,14 @@ input[type="text"]:hover {
 .message-box {
   width: 40vw;
   height: 50vh;
+  padding-top: 3px;
   padding: 10px;
   font-size: 16px;
   border: 2px solid #ccc;
   border-radius: 4px;
   resize: vertical;
   border-color: #00008b;
+  overflow-y: scroll;
 }
 
 .output-box {
@@ -202,4 +205,9 @@ input[type="text"]:hover {
   flex-direction: column;
   padding: 20px;
   background-color: #f8f8f8;
+}
+
+.out-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100%;
 }

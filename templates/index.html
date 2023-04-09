@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <title>Cipher Decoder</title>
     <link rel="stylesheet" href="../static/style.css">
-    <script src="/static/script.js"></script>
 </head>
-<body>
+<body style='overflow-x:hidden;'>
 <div class="header">
     <p class="title">
         Добро пожаловать на сайт для декодирования шифров!
@@ -15,14 +14,16 @@
 
 <div class="main">
     <form method="post">
-        <label for="text-input">Введите текст для расшифровки:</label>
-        <textarea id="text-input" name="text" rows="5" placeholder="Текст"></textarea>
-        <input onclick="getText()" type="text" value="Отправить">
+        <label for="text_input">Введите текст для расшифровки:</label>
+        <textarea id="text_input" name="text_input" rows="5" placeholder="{{text_input}}"></textarea>
+        <input type="submit" value="Отправить">
     </form>
 
     <div class="output-box">
         <label class="output-label">Возможные варианты расшифровки:</label>
-        <div class="message-box" id="message-box"></div>
+        <div class="message-box" id="message-box">
+             <h1 class="out-text">{{output_text}}</h1>
+        </div>
     </div>
 </div>
 
