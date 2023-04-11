@@ -43,6 +43,7 @@ def caesar_cipher_decrypt(words, rot):
 def decrypt(text):
     fileObj = codecs.open("russian.txt", "r", "utf_8_sig")
     all_words = fileObj.read().split("\n")
+    all_words = set(all_words)
     fileObj.close()
     counter_of_right_words = 0
     decrypted_text = ""
