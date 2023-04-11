@@ -19,15 +19,14 @@
 }
 
 .addInfo {
+    padding-bottom: 10px;
     width: 100vw;
     margin-top: 5%;
-    height: 30vh;
     background-color: black;
 }
 
 .infoTitles {
     width: 100vw;
-    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -65,7 +64,7 @@
 
 .infoText {
     width: 99vw;
-    height: 260px;
+    height: 30vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -208,6 +207,7 @@ input[type="submit"]:hover {
 }
 
 .out-text {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 100%;
+  margin-top: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 100%;
 }

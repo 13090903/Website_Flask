@@ -53,11 +53,15 @@ def decrypt(text):
 
     for i in range(1, 33):
         decrypted_words = caesar_cipher_decrypt(words, i)
+        start_counter = 0
         for w in decrypted_words:
             decrypted_text += w
             decrypted_text += " "
+            start_counter += 1
             if w in all_words:
                 counter_of_right_words += 1
+            if start_counter >= 2 and counter_of_right_words < start_counter - 1:
+                break
         if counter_of_right_words >= (len(words) - 2 if len(words) > 5 else len(words)):
             decrypted_text_possible_var.append(decrypted_text)
             decrypted_text = ""
